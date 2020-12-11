@@ -61,6 +61,6 @@ module.exports = (req, res, next) => {
   // Add security headers.
   contentSecurityPolicy({
     directives,
-    reportOnly: false,
+    reportOnly: true,
   })(req, res, next);
 };
